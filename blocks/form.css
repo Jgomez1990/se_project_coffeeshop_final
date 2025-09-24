@@ -26,6 +26,8 @@
   margin-bottom: 32px;
   cursor: pointer;
   transition: background-color 0.5s;
+  background-color: #1878dc;
+  color: #fff;
 }
 
 .form__button:hover {

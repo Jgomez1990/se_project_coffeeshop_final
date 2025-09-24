@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop</title>
     <meta name="author" content="Josué Gómez" />
-    <meta name="description" content="CoffeeShop project website for learning web development." />
-    <meta name="keywords" content="coffee, cafe, recipes, espresso, latte, cappuccino" />
+    <meta
+      name="description"
+      content="CoffeeShop project website for learning web development."
+    />
+    <meta
+      name="keywords"
+      content="coffee, cafe, recipes, espresso, latte, cappuccino"
+    />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,29 +73,33 @@
           <ul class="recipes__videos">
             <li>
               <iframe
+                class="recipes__iframe"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=UP1v2fjG3iQyJvsV"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p class="recipes__video-caption"><span>Aeropress recipe</span> <span>~5 min</span></p>
+              <p class="recipes__video-caption">
+                <span>Aeropress recipe</span> <span>~5 min</span>
+              </p>
             </li>
             <li>
               <iframe
+                class="recipes__iframe"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=1JySWiAZp37JQQcy"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p class="recipes__video-caption"><span>French press recipe</span> <span>~5 min</span></p>
+              <p class="recipes__video-caption">
+                <span>French press recipe</span> <span>~5 min</span>
+              </p>
             </li>
           </ul>
         </section>
@@ -107,7 +117,7 @@
                   required
                 />
               </label>
-              <label for="" class="form__label">
+              <label class="form__label">
                 Number of guests *
                 <input
                   class="form__input"
@@ -118,11 +128,11 @@
                   required
                 />
               </label>
-              <label for="" class="form__label">
+              <label class="form__label">
                 Date & time *
                 <input class="form__input" type="datetime-local" required />
               </label>
-              <label for="" class="form__label">
+              <label class="form__label">
                 Your email *
                 <input
                   class="form__input"
@@ -133,7 +143,7 @@
               </label>
             </fieldset>
             <button class="form__button">Book a table</button>
-            <label class="form__label form__label_type_check">
+            <label class="form__label form__label_type_checkbox">
               <input class="form__checkbox" type="checkbox" />
               I agree with the terms of use
             </label>
@@ -142,27 +152,27 @@
         <section id="menu" class="menu">
           <h2 class="menu__title">Menu</h2>
           <p class="menu__subtitle">
-            We brew coffee from locally roasted, Fairtrade certified beans and use
-            biodegradable cups. All teas from our collection are $2/cup.
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <ul class="menu__cards">
             <li class="card">
               <h3 class="card__title">Filter</h3>
               <ul class="card__list">
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Regular (12 oz) <span class="card__list-divider"></span> $1
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Large (16 oz) <span class="card__list-divider"></span> $1.25
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  XL (20 oz) <span class="card__list-divider"></span> $1.50
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Party-size (24 oz, decaf) <span class="card__list-divider"></span> $1.75
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Iced Coffee (16 oz) <span class="card__list-divider"></span> $1.25
                 </li>
               </ul>
             </li>
@@ -170,19 +180,19 @@
               <h3 class="card__title">Espresso</h3>
               <ul class="card__list">
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Americano <span class="card__list-divider"></span> $2
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Macchiato <span class="card__list-divider"></span> $2.25
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Cortado <span class="card__list-divider"></span> $2.50
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Mocha <span class="card__list-divider"></span> $3
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Sunrise in the Bay Area (decaf) <span class="card__list-divider"></span> $10
                 </li>
               </ul>
             </li>
@@ -190,19 +200,19 @@
               <h3 class="card__title">Baked Goods</h3>
               <ul class="card__list">
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Almond Croissant <span class="card__list-divider"></span> $2
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Banana Bread <span class="card__list-divider"></span> $1.75
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Key Lime Pie <span class="card__list-divider"></span> $3
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Blue Velvet Cake <span class="card__list-divider"></span> $3.75
                 </li>
                 <li class="card__list-item">
-                  Regular (12oz) <span class="card__list-divider"></span> $1
+                  Web Cookie <span class="card__list-divider"></span> $2
                 </li>
               </ul>
             </li>
